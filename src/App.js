@@ -29,7 +29,7 @@ class App extends Component {
   removeContact = (contact) => {
     this.setState(currentState => ({
       contacts: _.reject(currentState.contacts, stateContact => (stateContact.id === contact.id))
-    }))
+    }));
   };
 
   render() {
